@@ -4,7 +4,9 @@
   "description": "Fantasy Land Future extension of superagent",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "hint": "jshint lib test",
+    "test": "npm run hint && mocha",
+    "unit": "mocha"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,8 @@
     "superagent": ">=1.0.0"
   },
   "devDependencies": {
+    "chai": "^2.2.0",
+    "jshint": "^2.6.3",
     "mocha": "^2.2.4"
   }
 }
